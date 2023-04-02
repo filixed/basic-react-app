@@ -1,7 +1,8 @@
 import { Card } from "../../components/card/Card"
+import { CardElement } from "../../components/cardElement/cardElement";
 import MainMenu from "../mainMenu"
 import './main.css';
-import { CardStyleLeft, CardStyleLeftBottom, CardStyleRight, CardStyleRightBottom } from "./navStyle";
+import { CardStyle } from "./navStyle";
 
 export const Main = () => {
     return (
@@ -10,25 +11,35 @@ export const Main = () => {
                 <MainMenu>
                 </MainMenu>
             </div>
-            <div>
-                <div className="flex justify-between">
-                    <Card style={CardStyleLeft}>
-                        { }
+            <div className="main grid grid-rows-3 grid-flow-col gap-52 place-items-center-stretch h-96">
+                <div className="mt-5">
+                    <Card style={CardStyle}>
+                        <CardElement data="test" /> 
                     </Card>
                 </div>
-                <div className="flex justify-between">
-                    <Card style={CardStyleRightBottom}>
-                        { }
+                <div className="mt-5">
+                    <Card style={CardStyle}>
+                        <CardElement data="test" />
                     </Card>
                 </div>
-                <div className="flex justify-between">
-                    <Card style={CardStyleRight}>
-                        { }
+                <div className="mt-5">
+                    <Card style={CardStyle}>
+                        <CardElement data="test" />
                     </Card>
                 </div>
-                <div className="flex justify-between">
-                    <Card style={CardStyleLeftBottom}>
-                        { }
+                <div className="mt-5">
+                    <Card style={CardStyle}>
+                        <CardElement data="test" />
+                    </Card>
+                </div>
+                <div className="mt-5">
+                    <Card style={CardStyle}>
+                        <CardElement data="test" />
+                    </Card>
+                </div>
+                <div className="mt-5">
+                    <Card style={CardStyle}>
+                        <CardElement data="test" />
                     </Card>
                 </div>
             </div>
