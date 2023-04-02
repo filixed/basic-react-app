@@ -1,48 +1,36 @@
-import { Card } from "../../components/card/Card"
+import { Card } from "../../components/card/Card";
 import { CardElement } from "../../components/cardElement/cardElement";
-import MainMenu from "../mainMenu"
-import './main.css';
-import { CardStyle } from "./navStyle";
+import MainMenu from "../mainMenu";
+import "./main.css";
 
 export const Main = () => {
-    return (
-        <div>
-            <div>
-                <MainMenu>
-                </MainMenu>
-            </div>
-            <div className="main grid grid-rows-3 grid-flow-col gap-52 place-items-center-stretch h-96">
-                <div className="mt-5">
-                    <Card style={CardStyle}>
-                        <CardElement data="test" /> 
-                    </Card>
-                </div>
-                <div className="mt-5">
-                    <Card style={CardStyle}>
-                        <CardElement data="test" />
-                    </Card>
-                </div>
-                <div className="mt-5">
-                    <Card style={CardStyle}>
-                        <CardElement data="test" />
-                    </Card>
-                </div>
-                <div className="mt-5">
-                    <Card style={CardStyle}>
-                        <CardElement data="test" />
-                    </Card>
-                </div>
-                <div className="mt-5">
-                    <Card style={CardStyle}>
-                        <CardElement data="test" />
-                    </Card>
-                </div>
-                <div className="mt-5">
-                    <Card style={CardStyle}>
-                        <CardElement data="test" />
-                    </Card>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="container">
+      <div className="menu">
+        <MainMenu />
+      </div>
+      <div className="content">
+        <Card className="card-450">
+          <CardElement data="test" />
+        </Card>
+        <Card className="card-450">
+          <CardElement data="test" />
+        </Card>
+        <Card className="card-450">
+          <CardElement data="test" />
+        </Card>
+        <Card className="card-450">
+          <CardElement data="test" />
+        </Card>
+        <Card className="card-450">
+          <CardElement data="test" />
+        </Card>
+        <Card className="card-450">
+          <CardElement data="test" />
+        </Card>
+      </div>
+    </div>
+    </div>
+  );
+};

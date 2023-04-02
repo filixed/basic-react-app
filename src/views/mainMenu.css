@@ -1,0 +1,6 @@
+.sidebar {
+  display: flex;
+  background-color: #eee;
+  height: 100%;
+  min-height: 100%;
+}
