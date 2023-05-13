@@ -1,6 +1,9 @@
 .sidebar {
   display: flex;
-  background-color: #eee;
+  background-color: #3892ce;
   height: 100%;
   min-height: 100%;
+  width: 30vh;
+  justify-content: center;
 }
+
